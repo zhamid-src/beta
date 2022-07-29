@@ -1,0 +1,81 @@
+.is-vcentered {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center; /* used this for multiple child */
+}
+
+.navbar-dropdown {
+  margin-top: -4rem;
+}
+
+a.navbar-item:focus,
+a.navbar-item:focus-within,
+a.navbar-item:hover,
+a.navbar-item.is-active,
+.navbar-link:focus,
+.navbar-link:focus-within,
+.navbar-link:hover,
+.navbar-link.is-active {
+  text-decoration: underline;
+}
+
+.has-overflow-element {
+  margin-top: -2rem;
+  margin-bottom: -4rem;
+}
+
+/* TODO: use $tablet and sass */
+.has-text-shadow-warning {
+  text-shadow: 1px 1px #ffd51e;
+}
+.has-text-shadow-danger {
+  text-shadow: 1px 1px #d66666;
+}
+
+.is-fullwidth {
+  width: 100%;
+}
+
+blockquote {
+  background-image: url("../images/quote.png");
+  background-position-x: 10%;
+  background-position-y: 10%;
+  background-repeat: no-repeat;
+}
+
+blockquote.reverse {
+  background-image: url("../images/quote-reverse.png");
+}
+
+.title.is-letter-spaced,
+.button.is-letter-spaced {
+  letter-spacing: 0.1em;
+}
+
+a.is-decoration-underlined {
+  text-decoration: underline;
+}
+
+a:hover.is-decoration-underlined {
+  text-decoration: none;
+}
+
+.navbar-link:not(.is-arrowless)::after {
+  border-color: #666;
+}
+
+.tabs-content li {
+  display: none;
+  list-style: none;
+}
+
+.tabs-content li.is-active {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .reverse-columns {
+    flex-direction: column-reverse;
+    display: flex;
+  }
+}

@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@900&display=swap');
+
+
+// Set the brand colors
+$grey-dark: #545B69;
+$grey-lighter: #E8E8E8;
+$yellow: #FFD51E;
+$danger: #D66666;
+
+$variable-columns: true;
+
+$primary: $grey-dark;
+
+// Update Bulma's global variables
+$family-sans-serif: "Roboto", sans-serif;
+$family-secondary: "Nunito Sans", sans-serif;
+
+// colour themes
+$primary-invert: $yellow;
+$secondary: $yellow;
+$button-color: $primary;
+$footer-background-color: $primary;
+
+$body-background-color: #EEF0F2;
+
+// other customizations
+$fullhd-enabled: false;
+$control-border-width: 2px;
+$input-shadow: none;
+
+$navbar-item-img-max-height: 10rem;
+$navbar-item-hover-background-color: white;
+
+
+$radius: 0;
+
+$card-shadow: 0 0.5em 1em -0.125em $yellow, 0 0px 0 1px $yellow;
+
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+
+$link: bulmaDarken($primary, 5%);
+
+@import "../node_modules/bulma/sass/base/_all.sass";
+
+@import "../node_modules/bulma/sass/components/card.sass";
+@import "../node_modules/bulma/sass/components/dropdown.sass";
+@import "../node_modules/bulma/sass/components/level.sass";
+@import "../node_modules/bulma/sass/components/menu.sass";
+@import "../node_modules/bulma/sass/components/message.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/components/tabs.sass";
+
+
+@import "../node_modules/bulma/sass/elements/box.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/content.sass";
+@import "../node_modules/bulma/sass/elements/icon.sass";
+@import "../node_modules/bulma/sass/elements/image.sass";
+@import "../node_modules/bulma/sass/elements/notification.sass";
+@import "../node_modules/bulma/sass/elements/other.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+
+
+
+@import "../node_modules/bulma/sass/grid/_all.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/helpers/_all.sass";
+@import "../node_modules/bulma/sass/layout/_all.sass";
+
+
+@import "../node_modules/bulma-social/css/all.min.css";
+
+

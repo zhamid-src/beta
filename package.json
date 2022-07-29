@@ -1,0 +1,26 @@
+{
+  "name": "campaign2022",
+  "version": "1.0.0",
+  "description": "Zeeshan Hamid for Mayor",
+  "main": "sass/styles.scss",
+  "scripts": {
+    "css-build": "sass sass/styles.scss css/styles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "css-compress": "npm run css-build -- --style compressed",
+    "html-minify": "html-minifier --input-dir . --output-dir . --file-ext html --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true",
+    "js-minify": "html-minifier js/fn.js > js/fn.min.js --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype",
+    "start": "npm run css-watch",
+    "build": "npm run css-compress && npm run html-minify && npm run js-minify"
+  },
+  "author": "Zeeshan Hamid",
+  "license": "ISC",
+  "dependencies": {
+    "@vizuaalog/bulmajs": "^0.12.1",
+    "bulma-social": "^2.1.0"
+  },
+  "devDependencies": {
+    "bulma": "^0.9.4",
+    "sass": "^1.52.2",
+    "html-minifier": "^4.0.0"
+  }
+}

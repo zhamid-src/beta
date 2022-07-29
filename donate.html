@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8" /><meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>
+    Zeeshan Hamid for Mayor</title
+  ><link rel="stylesheet" href="css/styles.css" /><link
+    rel="stylesheet"
+    href="css/custom.css"
+  />
+  <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  <div class="container is-widescreen">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand ml-2">
+        <a class="navbar-item" href="/"
+          ><img src="images/logo-grey.png" height="125" /> </a
+        ><a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navTopBar"
+          ><span aria-hidden="true"></span> <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span
+        ></a>
+      </div>
+      <div
+        id="navTopBar"
+        class="navbar-menu is-size-5 has-text-weight-bold mr-2"
+      >
+        <div class="navbar-end">
+          <a class="navbar-item" href="meetzee.html">Meet Zee </a>
+          <a class="navbar-item" href="platform.html">Platform</a>
+          <a class="navbar-item" href="help.html">Get Involved</a>
+
+          <!--
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">Get Involved</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item is-size-6" href="help.html"
+              >Volunteer </a
+            ><a class="navbar-item is-size-6" href="help.html">Yard Sign </a
+            ><a class="navbar-item is-size-6" href="donate.html">Donate</a>
+            <hr class="navbar-divider" />
+            <a class="navbar-item is-size-6" href="supporterkit.html"
+              >DIY Supporter Toolkit</a
+            >
+          </div>
+        </div>
+        -->
+          <a href="contact.html" class="navbar-item">Contact</a>
+          <div class="navbar-item">
+            <div class="buttons">
+              <a
+                href="donate.html"
+                class="button is-letter-spaced is-primary is-medium"
+                ><strong>Donate</strong>
+                <span class="icon"><i class="fas fa-arrow-right"></i></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="has-background-grey-lighter is-large">
+      <div class="columns is-vcentered">
+        <div class="column pb-0"><img src="images/donation.png" /></div>
+        <div class="column">
+          <div
+            class="title is-letter-spaced em is-2 has-text-weight-bold has-text-primary has-text-shadow-danger has-text-centered"
+          >
+            Money <italic>can</italic> buy happiness. Try it.  
+          </div>
+          
+          <div class="tabs-wrapper">
+            <div class="tabs is-centered is-toggle mb-0">
+              <ul>
+                <li
+                  class="has-background-light is-active"
+                  onclick='setFrequency("one-time")'
+                >
+                  <a>One-time</a>
+                </li>
+                <li
+                  class="has-background-light"
+                  onclick='setFrequency("monthly")'
+                >
+                  <a>Monthly</a>
+                </li>
+              </ul>
+            </div>
+            <div class="tabs-content">
+              <ul>
+                <li class="is-active">
+                  <div class="is-0 has-text-centered pb-6">The donation is only taken out once</div>
+                  <div class="columns is-mobile is-vcentered is-mobile">                    
+                    <div class="column is-half is-offset-one-quarter">
+                      <div class="columns is-gapless is-mobile">
+                        <div class="column">
+                          <button
+                            class="button is-primary is-outlined donation-button"
+                            onclick="setDonation(25, this)"
+                          >
+                            $25
+                          </button>
+                        </div>
+                        <div class="column has-text-centered">
+                          <button
+                            class="button is-primary is-outlined donation-button"
+                            onclick="setDonation(50, this)"
+                          >
+                            $50
+                          </button>
+                        </div>
+                        <div class="column has-text-right">
+                          <button
+                            class="button is-primary is-outlined donation-button is-align"
+                            onclick="setDonation(100, this)"
+                          >
+                            $100
+                          </button>
+                        </div>
+                      </div>
+                      <div class="columns is-gapless is-mobile">
+                        <div class="column">
+                          <button
+                            class="button is-primary is-outlined donation-button"
+                            onclick="setDonation(150, this)"
+                          >
+                            $150
+                          </button>
+                        </div>
+                        <div class="column has-text-centered">
+                          <button
+                            class="button is-primary is-outlined donation-button"
+                            onclick="setDonation(250, this)"
+                          >
+                            $250
+                          </button>
+                        </div>
+                        <div class="column has-text-right">
+                          <button
+                            class="button is-primary is-outlined donation-button"
+                            onclick="setDonation(500, this)"
+                          >
+                            $500
+                          </button>
+                        </div>
+                      </div>
+                      <div class="columns is-gapless is-mobile">
+                        <div class="column">
+                          <button
+                            class="button is-primary is-outlined donation-button"
+                            onclick="setDonation(750, this)"
+                          >
+                            $750
+                          </button>
+                        </div>
+                        <div class="column has-text-centered">
+                          <button
+                            class="button is-primary is-outlined donation-button"
+                            onclick="setDonation(1000, this)"
+                          >
+                            $1000
+                          </button>
+                        </div>
+                        <div class="column has-text-right">
+                          <button
+                            class="button is-primary is-outlined donation-button"
+                            onclick="setDonation(1200, this)"
+                          >
+                            $1200
+                          </button>
+                        </div>
+                      </div>
+                      <a
+                        class="button is-letter-spaced is-primary is-medium is-fullwidth"
+                        onclick="donate()"
+                        >Next
+                        <span class="icon ml-2"
+                          ><i class="fas fa-arrow-right"></i></span
+                      ></a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="is-0 has-text-centered pb-6">Monthly donations, ending on Dec 2022</div>
+                  <div class="columns is-mobile is-vcentered is-mobile">
+                    <div class="column is-half is-offset-one-quarter">
+                      <div class="columns is-gapless is-mobile">
+                        <div class="column">
+                          <button
+                            class="button is-primary is-outlined donation-button"
+                            onclick="setDonation(15, this)"
+                          >
+                            $15
+                          </button>
+                        </div>
+                        <div class="column has-text-centered">
+                          <button
+                            class="button is-primary is-outlined donation-button"
+                            onclick="setDonation(25, this)"
+                          >
+                            $25
+                          </button>
+                        </div>
+                        <div class="column has-text-right">
+                          <button
+                            class="button is-primary is-outlined donation-button is-align"
+                            onclick="setDonation(40, this)"
+                          >
+                            $40
+                          </button>
+                        </div>
+                      </div>
+                      <div class="columns is-gapless is-mobile">
+                        <div class="column">
+                          <button
+                            class="button is-primary is-outlined donation-button"
+                            onclick="setDonation(75, this)"
+                          >
+                            $75
+                          </button>
+                        </div>
+                        <div class="column has-text-centered">
+                          <button
+                            class="button is-primary is-outlined donation-button"
+                            onclick="setDonation(100, this)"
+                          >
+                            $100
+                          </button>
+                        </div>
+                        <div class="column has-text-right">
+                          <button
+                            class="button is-primary is-outlined donation-button"
+                            onclick="setDonation(150, this)"
+                          >
+                            $150
+                          </button>
+                        </div>
+                      </div>
+                      <div class="columns is-gapless is-mobile">
+                        <div class="column">
+                          <button
+                            class="button is-primary is-outlined donation-button"
+                            onclick="setDonation(175, this)"
+                          >
+                            $175
+                          </button>
+                        </div>
+                        <div class="column has-text-centered">
+                          <button
+                            class="button is-primary is-outlined donation-button"
+                            onclick="setDonation(200, this)"
+                          >
+                            $200
+                          </button>
+                        </div>
+                        <div class="column has-text-right">
+                          <button
+                            class="button is-primary is-outlined donation-button"
+                            onclick="setDonation(250, this)"
+                          >
+                            $250
+                          </button>
+                        </div>
+                      </div>
+                      <a
+                        class="button is-letter-spaced is-primary is-medium is-fullwidth"
+                        onclick="donate()"
+                        >Next
+                        <span class="icon ml-2"
+                          ><i class="fas fa-arrow-right"></i></span
+                      ></a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </section>
+
+    <!--
+    <section class="has-background-white is-large has-overflow-element py-2">
+      
+        <div prefill="address=,,Ontario,Milton,"  data-paperform-id="oddcnigw"></div>
+        <script>
+          (function () {
+            var script = document.createElement("script");
+            script.src = "https://paperform.co/__embed.min.js";
+            document.body.appendChild(script);
+          })();
+        </script>
+
+    </section>
+-->
+ 
+    <footer class="footer is-primary p-6">
+      <div class="columns is-variable py-6 is-8">
+        <div class="column has-text-left is-one-third-tablet">
+          <span
+            class="title is-2 has-text-weight-bold has-text-warning has-text-shadow-danger"
+            >#ZeeForMayor </span
+          ><input class="input my-4" placeholder="Email" />
+          <a
+            class="button is-letter-spaced is-medium is-warning is-fullwidth has-text-primary"
+            ><strong>Join the Movement</strong>
+            <span class="icon"><i class="fas fa-arrow-right"></i></span
+          ></a>
+        </div>
+        <div
+          class="column is-one-third-tablet has-background-warning is-vcentered"
+        >
+          <img src="images/logo-grey.png" height="125" />
+        </div>
+        <div class="column is-one-third-tablet pl-6">
+          <ul class="has-text-left">
+            <li><a href="" class="has-text-white title">Meet Zee</a></li>
+            <li><a href="" class="has-text-white title">Platform</a></li>
+            <li><a href="" class="has-text-white title">Get Involved</a></li>
+            <li><a href="" class="has-text-white title">Contact</a></li>
+            <li>
+              <div class="buttons">
+                <a
+                  class="button is-letter-spaced is-primary is-inverted is-medium px-6"
+                  ><strong>Donate</strong></a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="social is-variable has-text-centered">
+        <a class="button is-medium is-facebook mx-4"
+          ><span class="icon"><i class="fab fa-facebook fa-lg"></i> </span></a
+        ><a class="button is-medium is-twitter mx-4"
+          ><span class="icon"><i class="fab fa-twitter fa-lg"></i> </span></a
+        ><a class="button is-medium is-instagram mx-4"
+          ><span class="icon"><i class="fab fa-instagram fa-lg"></i> </span></a
+        ><a class="button is-medium is-youtube mx-4"
+          ><span class="icon"><i class="fab fa-youtube fa-lg"></i></span
+        ></a>
+      </div>
+      <div class="has-text-grey-light pt-6 has-text-centered">
+        &copy; Copyright - The Zeeshan Hamid Campaign
+      </div>
+    </footer>
+  </div>
+  <script src="node_modules/@vizuaalog/bulmajs/dist/bulma.js"></script>
+  <script src="js/fn.min.js"></script>
+</html>
